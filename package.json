@@ -11,6 +11,15 @@
   ],
   "type": "module",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/17855880027WuYutao/dsh-theme.git"
+  },
+  "homepage": "https://github.com/17855880027WuYutao/dsh-theme#readme",
+  "bugs": {
+    "url": "https://github.com/17855880027WuYutao/dsh-theme/issues"
+  },
+  "author": "Wu Yutao",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
