@@ -2,6 +2,8 @@
 
 给 DSH 工作台加一个左侧栏入口，一屏配色卡，点一下就整套界面换色。默认带「米黄护眼」在内的 8 套配色，最后一张卡片可以自己调色。
 
+GitHub：https://github.com/17855880027WuYutao/dsh-theme　　Gitee：https://gitee.com/wu-yutao17855880027/dsh-theme
+
 ![主题面板](docs/overview.png)
 
 ## 用法
