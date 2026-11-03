@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Theme studio">
+  <rect x="0" y="0" width="256" height="256" rx="56" fill="#F6F0E1"/>
+  <rect x="28" y="28" width="200" height="200" rx="44" fill="#FBF7EC"/>
+  <path d="M128 62a66 66 0 1 0 0 132c11 0 16-6 16-15 0-11 8-18 18-18h8a24 24 0 0 0 24-24A66 66 0 0 0 128 62Z" fill="none" stroke="#A9743A" stroke-width="12" stroke-linejoin="round"/>
+  <circle cx="101" cy="113" r="9" fill="#A9743A"/>
+  <circle cx="128" cy="95" r="9" fill="#C06280"/>
+  <circle cx="155" cy="113" r="9" fill="#4E7A46"/>
+</svg>

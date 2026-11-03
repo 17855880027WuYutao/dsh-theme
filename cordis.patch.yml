@@ -1,0 +1,5 @@
+# dsh-theme-studio bundle patch —— 把一个纯客户端插件挂进 DSH profile。
+# 只有 insert（id/name 都可热挂载），不碰 profile 里的其它行。
+- insert:
+    - id: dsh-theme-studio
+      name: dsh-theme-studio
