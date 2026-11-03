@@ -1,4 +1,4 @@
-# dsh-theme-studio
+# dsh-theme
 
 给 DSH 工作台加一个左侧栏入口，一屏配色卡，点一下就整套界面换色。默认带「米黄护眼」在内的 8 套配色，最后一张卡片可以自己调色。
 
@@ -50,7 +50,7 @@ GitHub：https://github.com/17855880027WuYutao/dsh-theme　　Gitee：https://gi
 
 ## 实现方式
 
-- 换色走 `ctx.theme.overrideTokens('dsh-theme-studio', { token: { light, dark } })`，只叠一层 alias token，不改内置主题注册，也不碰别人的偏好。
+- 换色走 `ctx.theme.overrideTokens('dsh-theme', { token: { light, dark } })`，只叠一层 alias token，不改内置主题注册，也不碰别人的偏好。
 - 覆盖的 token 约 30 个：底色 / 层 / 边框 / 文字 / 品牌色 / 状态色 / 气泡 / 滚动条 / 聚焦环 / 阴影等。
 - 每套配色自带浅色或深色属性，激活时会顺带把「外观」偏好切到对应模式（`theme.setTheme`），这样没被覆盖到的 token 也跟随合适的底色；点「恢复默认外观」时还原成原来的偏好。
 - 纯客户端插件，Host 端 `apply()` 是空的。

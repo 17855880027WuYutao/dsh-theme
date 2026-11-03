@@ -1,5 +1,5 @@
 /**
- * dsh-theme-studio —— 客户端半部。
+ * dsh-theme —— 客户端半部。
  *
  * 侧栏一个图标 → 主面板一屏配色卡 → 点一下给整个工作台换色。
  * 换色走 ctx.theme.overrideTokens(源码名, {token: {light, dark}}) 叠一层 alias
@@ -7,7 +7,7 @@
  */
 
 window.__ModuleLoader__.load({
-  id: 'dsh-theme-studio',
+  id: 'dsh-theme',
   factory: (require) => {
     var module = { exports: {} }
     var exports = module.exports
@@ -17,11 +17,11 @@ window.__ModuleLoader__.load({
     const h = React.createElement
     const { useState, useEffect } = React
 
-    const PLUGIN_ID = 'dsh-theme-studio'
+    const PLUGIN_ID = 'dsh-theme'
     const SLOT_ID = 'theme-studio'
-    const STORAGE_KEY = 'dsh-theme-studio:preset'
-    const PREV_KEY = 'dsh-theme-studio:prev-preference'
-    const CUSTOM_KEY = 'dsh-theme-studio:custom'
+    const STORAGE_KEY = 'dsh-theme:preset'
+    const PREV_KEY = 'dsh-theme:prev-preference'
+    const CUSTOM_KEY = 'dsh-theme:custom'
     const CUSTOM_ID = 'custom'
 
     /* ------------------------------------------------------------------ *
@@ -363,7 +363,7 @@ window.__ModuleLoader__.load({
         try {
           fn()
         } catch (error) {
-          console.warn('[dsh-theme-studio] listener failed', error)
+          console.warn('[dsh-theme] listener failed', error)
         }
       }
     }
@@ -712,7 +712,7 @@ body{transition:background-color .28s var(--ds-ease-in-out),color .28s var(--ds-
         return () => {
           tag.remove()
         }
-      }, 'dsh-theme-studio: styles')
+      }, 'dsh-theme: styles')
 
       ctx.slots.inject('main', () =>
         ctx.slots.register({ name: 'main', key: SLOT_ID }, Panel),
